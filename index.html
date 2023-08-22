@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="Zadanie rekrutacyjne firmy AdRespect">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+      </head>
+    <body>
+      <!-- NAVIGATION -->
+      <div id="backgroundLock"></div>
+      <!-- image viewer -->
+      <div id="imageGallery">
+        <button class="btn" id="prev">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <div class="container m-0 p-0 h-100">
+          <div id="exit">
+            <button class="btn btn-danger">
+              <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+          </div>
+          <div id="galleryImg">
+            <img src="./assets/aboutPhoto.png" alt="imageGalleryPhoto">
+          </div>
+         
+        </div>
+        
+        <div id="next">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light pl-lg-5 sticky-top">
+          <a class="navbar-brand ml-lg-5 ml-1" href="#"><span style="font-weight: 700;">giard</span>design</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav d-flex">
+              <li class="nav-item text-center" id="logoNavbarSm">
+                <span style="font-weight: 700; margin:0">giard</span>design
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Oferta
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O firmie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Realizacje</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Kontakt</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                  <i class="fa-solid fa-magnifying-glass pt-0" id="searchMagnify"></i>
+              </li>
+              <li class="nav-item d-flex align-items-center mr-5">
+                <form class="form-inline my-2 my-lg-0" id="naviSearch">
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0 d-flex justify-content-center" type="submit" id="submitSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </li>
+            </ul>
+
+          </div>
+        </nav>
+        <div id="intro">
+        <div id="introCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row m-0 p-0 h-100">
+                <div id="leftIntro" class="col-12 col-lg-7 leftIntroF">
+                  <span id="brightOverlay"></span>
+                  <div id="introText">
+                    <h2>
+                      Nowoczesna<br> aranżacja <br>Twojego ogrodu 
+                    </h2>
+                    <p class="mt-5 w-75">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+                    <div id="introButtons">
+                      <button class="btn btn-success px-4 px-md-2">Skontaktuj się z nami</button>
+                      <a href="#projekty"><button class="btn">Zobacz nasze realizacje<i class="fa-solid fa-arrow-down ml-3"></i></button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-0 col-5" id="rightIntro">
+
+                  <img src="./assets/introPhoto.png" alt="introPhoto">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="row m-0 p-0 h-100">
+                <div id="leftIntro" class="col-12 col-lg-7 leftIntroS">
+                  <span id="brightOverlay"></span>
+                  <div id="introText">
+                    <h2>
+                      Tworzymy Ogród Twoich Marzeń
+                    </h2>
+                    <p class="mt-5 w-75">Nasza firma kładzie nacisk na tworzenie wyjątkowych przestrzeni, które odzwierciedlają Twoją wizję idealnego ogrodu.</p>
+                    <div id="introButtons">
+                      <button class="btn btn-success px-4 px-md-2">Skontaktuj się z nami</button>
+                      <a href="#projekty">
+                        <button class="btn p-0 ">
+                          Zobacz nasze realizacje<i class="fa-solid fa-arrow-down ml-3"></i>
+                        </button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-0 col-5" id="rightIntro">
+                  <span id="secondBrightOverlay"></span>
+                  <img src="./assets/gavin-mcgruddy-unsplash.jpg" alt="introPhoto">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="carouselControls">
+            <a class="carousel-control-prev carouselControl" href="#introCarousel" role="button" data-slide="prev">
+              <i class="fa-solid fa-arrow-left-long"></i>
+              <span  aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next carouselControl" href="#introCarousel" role="button" data-slide="next">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        </div>
+      <!-- OFERTA -->
+      <div id="oferta">
+        <div id="ofertaText" class="container">
+          <div class="row" >
+            <div class="col-12" id="titleBlock"><p>Oferta</p></div>
+            <div class="col-12" id="titleBig">
+              <h2>Działamy kompleksowo</h2>
+            </div>
+            <div class="col-12" id="titleSmall"><p>
+              Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. 
+            </p></div>
+            
+          </div>
+        </div>
+
+        <div class="row" id="ofertaTables">
+
+            <div class="col-6 col-lg-4 card px-2 px-md-5">
+              <div class="col-12 cardInside px-4 px-md-5"  id="cardFirst">
+                <img src="./assets/penIcon.png" alt="pen icon">
+                <span class="cardText ">
+                  <b>Projekty</b>
+                  <p class="mt-lg-3 mt-2">Zaprojektujemy Twój ogród w nowoczesnym stylu
+                    i z najlepszym wykorzystaniem istniejącej
+                    przestrzeni.</p>
+                </span>
+                <a href="#" class="cardLink">Dowiedz się więcej <i class="fa-solid fa-arrow-right-long"></i> </a>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-4 card  px-2 px-md-5">
+              <div class="col-12 cardInside px-4 px-md-5" id="cardSecond">
+                <img src="./assets/eyeIcon.png" alt="offer eye icon">
+                <span class="cardText">
+                  <b>Wizualizacje</b>
+                  <p class="mt-lg-3 mt-2">Przedstawimy Ci projekty koncepcyjne w postaci
+                      wirtualnego spaceru animowanego w technologii 3D.</p>
+                </span>
+                <a href="#" class="cardLink">Dowiedz się więcej <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+
+            <div class="col-7 col-lg-4 mx-auto px-0  mx-lg-0 mt-2 mt-lg-0 card px-md-5"  >
+              <div id="cardThird" class="col-12  cardInside pb-1 pb-lg-4 pt-3 pt-lg-4 px-4  d-flex justify-content-start align-items-start flex-column flex-lg-row">
+                <img src="./assets/sparksIcon.png" alt="sparks icon">
+                <span class="cardText ">
+                  <b>Realizacje</b>
+                  <p class="mt-lg-3 mt-2">Zrealizujemy Twoje marzenie przy użyciu najnowszych
+                      rozwiązań i zaawansowanych technologii.</p>
+                </span>
+                <a href="#" class="cardLink ">Zobacz nasze realizacje <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+
+        </div>
+        </div>
+        <!-- ABOUT -->
+        <div id="about">
+          <div class="row m-0 p-0 h-100">
+            <div class="col-6 h-100 p-0">
+              <img src="./assets/aboutPhoto.png" alt="aboutPhoto">
+            </div>
+            <div class="col-6" id="aboutText">
+              <div class="container py-0" id="aboutTextRectangle">
+                <div class="row h-100 m-0 p-0 d-flex align-items-start">
+                  <p>O firmie</p>
+                  <h2>Tworzymy <br>z pasją</h2>
+                  <p class=" mt-lg-4" id="aboutParag">
+                    Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.
+                  </p>
+                  <button class="btn btn-success">
+                    Poznaj nas bliżej<i class="fa-solid fa-arrow-right-long ml-2"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MASONRY BLOCKS -->
+        <div id="projekty" #projekty name="projekty">
+          <p class="pt-5">Realizacje</p>
+          <h2 >Nasze projekty</h2>
+          <div class="grid">
+            <div id="gridOverlay">
+              <button class="btn" id="overlayBtn" name="overlayBtn">
+                Rozwiń <i class="fa-solid fa-arrow-down ml-3"></i>
+              </button>
+            </div>
+            <div id="gridOverlayHide">
+              <button class="btn" id="overlayHideBtn" name="overlayHideBtn">
+                Schowaj <i class="fa-solid fa-arrow-up ml-3"></i>
+              </button>
+            </div>
+            <div class="grid-item"><img src="./assets/masonryImages/masonryPhoto1.png" alt="MasonryGridImage"></div>
+            <div class="grid-item"><img src="./assets/masonryImages/masonryPhoto2.png" alt="MasonryGridImage"></div>
+            <div class="grid-item"><img src="./assets/masonryImages/masonryPhoto3.png" alt="MasonryGridImage"></div>
+            <div class="grid-item"><img src="./assets/masonryImages/masonryPhoto4.png" alt="MasonryGridImage"></div>
+            <div class="grid-item"><img src="./assets/masonryImages/masonryPhoto5.png" alt="MasonryGridImage"></div>
+            <div class="grid-item"><img src="./assets/masonryImages/masonryPhoto6.png" alt="MasonryGridImage"></div>
+            <div class="grid-item"><img src="./assets/masonryImages/masonryPhoto7.png" alt="MasonryGridImage"></div>
+            <div class="grid-item"><img src="./assets/masonryImages/masonryPhoto8.png" alt="MasonryGridImage"></div>
+            <div class="grid-item"><img src="./assets/masonryImages/masonryPhoto9.png" alt="MasonryGridImage"></div>
+
+          </div>     
+        </div>
+
+        <!-- INSTAGRAM BLOCK -->
+        <div id="instagramBlock">
+        <div class="h-75" id="instagramC">
+            <div class="row h-100">
+              <div class="col-12 col-lg-8 text-center text-lg-left  " id="instagramHeader">
+                <h2>Zostańmy w kontakcie!<br> Znajdziesz nas na <span style="font-weight:500;">Instagramie.</span></h2>
+              </div>
+              <div class="col-12 col-lg-4 p-0 pl-3 d-flex flex-column" id="instagramText">
+                <p class="d-flex flex-column">
+                <span>śledź nasze</span> najnowsze realizacje!</p>
+                <button class="btn" id="followB">Instagram</button>
+              </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div id="footer">
+          <div class="container h-100 px-0">
+            <div class="row m-0 p-0 h-100 d-flex align-content-start">
+              <div class="col-12  d-flex  justify-content-between px-0" id="logoContactB">
+                  <div class="row h-100 m-0 p-0">
+                    <div class="col-12 col-md-4 pl-0 " id="footerContactLogo">
+                      <span style="font-weight: 700;">giard</span>design
+                    </div>
+                    <div class="col-12 col-md-8 d-flex flex-row justify-content-end px-0" id="footerContactButton">
+                      <b class="mr-3">Daj znać, co możemy dla Ciebie zrobić!</b>
+                      <button class="btn mt-4 mt-md-1" id="contactButton">Skontaktuj się z nami
+                    </div>
+                  </div>
+              </div>
+              <div class="col-12 px-0" id="socials">
+                <ul>
+                  <li>Kontakt</li>
+                  <li>Instagram</li>
+                  <li>Facebook</li>
+                  <li>LinkedIn</li>
+                  
+                </ul>
+                <span>
+                  <div class="row h-100 m-0 p-0 ">
+                    <div class="col-12 col-md-5 text-right">000-000-000</div>
+                    <div class="col-12 col-md-5 text-right">giarddesign@kontakt.pl</div>
+                  </div>
+                </span>
+              </div>
+              <div class="col-12 px-0" id="footerBottom">
+                <div class="row m-0 p-0 h-100 d-flex justify-content-between px-3 px-lg-0 align-items-center text-left ">
+                  Prawa zastrzeżone &#169 2022
+                <span>
+                  made by <img src="./assets/logo-full-light.png" alt="footerLogo" class="mx-2">
+                </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!-- IMPORT SCRIPTS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>   
+      
+      <script src="main.js" async defer></script>
+    </body>
+</html>
